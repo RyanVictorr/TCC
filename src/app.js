@@ -8,7 +8,7 @@ const cors = require('cors')
 const env = require('./config/env');
 
 app.use(cors({
-  origin: "*"/* env.cliente_url */,
+  origin: env.cliente_url,
   credentials: true,
   methods: 'GET, PUT, POST, OPTIONS, DELETE',
 }))
